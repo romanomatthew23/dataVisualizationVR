@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{00468D5C-E988-52A1-0C7A-C0625BB04F5D}") = "Data Visualization with Menu Experimenting with Environment", "Assembly-CSharp.csproj", "{E8853D0E-CAFF-6EC0-4FE0-9F6F8F714205}"
+EndProject
+Project("{00468D5C-E988-52A1-0C7A-C0625BB04F5D}") = "Data Visualization with Menu Experimenting with Environment", "Assembly-CSharp-Editor.csproj", "{D0E8D144-332B-F990-51E0-AEBF1C74818A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8853D0E-CAFF-6EC0-4FE0-9F6F8F714205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8853D0E-CAFF-6EC0-4FE0-9F6F8F714205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8853D0E-CAFF-6EC0-4FE0-9F6F8F714205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8853D0E-CAFF-6EC0-4FE0-9F6F8F714205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E8D144-332B-F990-51E0-AEBF1C74818A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E8D144-332B-F990-51E0-AEBF1C74818A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E8D144-332B-F990-51E0-AEBF1C74818A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E8D144-332B-F990-51E0-AEBF1C74818A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

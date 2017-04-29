@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{64FFCCC6-F0FE-37C9-171D-B087F1265014}") = "Data Visualization Latest Gaze", "Assembly-CSharp.csproj", "{42F540DE-2797-3A74-2F9A-7E9BB53136A8}"
+EndProject
+Project("{64FFCCC6-F0FE-37C9-171D-B087F1265014}") = "Data Visualization Latest Gaze", "Assembly-CSharp-Editor.csproj", "{0FE6A19A-E8A7-3CD1-4A01-3DAA0A8AAFB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F540DE-2797-3A74-2F9A-7E9BB53136A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F540DE-2797-3A74-2F9A-7E9BB53136A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F540DE-2797-3A74-2F9A-7E9BB53136A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F540DE-2797-3A74-2F9A-7E9BB53136A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE6A19A-E8A7-3CD1-4A01-3DAA0A8AAFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE6A19A-E8A7-3CD1-4A01-3DAA0A8AAFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE6A19A-E8A7-3CD1-4A01-3DAA0A8AAFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE6A19A-E8A7-3CD1-4A01-3DAA0A8AAFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

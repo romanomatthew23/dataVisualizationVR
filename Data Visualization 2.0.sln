@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{181E278D-F645-7C79-5625-28AF1755F38B}") = "Data Visualization 2.0", "Assembly-CSharp.csproj", "{16E3D454-2756-735F-E1DE-D87FC2043411}"
+EndProject
+Project("{181E278D-F645-7C79-5625-28AF1755F38B}") = "Data Visualization 2.0", "Assembly-CSharp-Editor.csproj", "{A424B6E0-EA82-F21B-1897-011E730D9398}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16E3D454-2756-735F-E1DE-D87FC2043411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E3D454-2756-735F-E1DE-D87FC2043411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E3D454-2756-735F-E1DE-D87FC2043411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E3D454-2756-735F-E1DE-D87FC2043411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A424B6E0-EA82-F21B-1897-011E730D9398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A424B6E0-EA82-F21B-1897-011E730D9398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A424B6E0-EA82-F21B-1897-011E730D9398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A424B6E0-EA82-F21B-1897-011E730D9398}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
