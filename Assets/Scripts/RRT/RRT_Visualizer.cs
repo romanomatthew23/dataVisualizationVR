@@ -147,7 +147,7 @@ public class RRT_Visualizer : MonoBehaviour {
 	}
 
 
-	void randInit() {
+	public void randInit() {
 		if (generated)
 			return;
 		randomizePoints ();
@@ -206,7 +206,7 @@ public class RRT_Visualizer : MonoBehaviour {
 		}
 	}
 
-	void destroyObjects()
+	public void destroyObjects()
 	{
 		if (!generated) {
 			return;

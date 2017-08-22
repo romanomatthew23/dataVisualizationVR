@@ -12,18 +12,31 @@ public class RRTRotator : MonoBehaviour {
 
 	void execRot() {
 		if (Input.GetKeyDown (KeyCode.JoystickButton5)) {	//xbox 'right bumper" button
-			graph.transform.Rotate (0, 10, 0);
-			Debug.Log ("Rotate Right");
+			rotateRight();
 		}
 
 		if (Input.GetKeyDown (KeyCode.JoystickButton4)) {	//xbox 'left bumper" button
-			graph.transform.Rotate (0, -10, 0);
-			Debug.Log ("Rotate Left");
+			rotateLeft();
 		}
 		if (Input.GetKeyDown (KeyCode.JoystickButton7)) {	//xbox 'start" button
-			menu.SetActive (true);
-			overlay.SetActive (false);
-			graph.SetActive(false);
+			exitRRT();
 		}
 	}
+
+	public void rotateRight() {
+		graph.transform.Rotate (0, 10, 0);
+		Debug.Log ("Rotate Right");
+	}
+
+	public void rotateLeft() {
+		graph.transform.Rotate (0, -10, 0);
+		Debug.Log ("Rotate Left");
+	}
+
+	public void exitRRT() {
+		menu.SetActive (true);
+		overlay.SetActive (false);
+		graph.SetActive(false);
+	}
+
 }

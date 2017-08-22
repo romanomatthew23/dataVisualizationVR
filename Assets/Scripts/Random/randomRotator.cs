@@ -7,6 +7,7 @@ public class randomRotator : MonoBehaviour {
 	public GameObject menu;
 	public GameObject overlay;
 
+
 	// Update is called once per frame
 	void Update () {
 		execRot ();
@@ -14,18 +15,30 @@ public class randomRotator : MonoBehaviour {
 
 	void execRot() {
 		if (Input.GetKeyDown (KeyCode.JoystickButton5)) {	//xbox 'right bumper" button
-			graph.transform.Rotate (0, 10, 0);
-			Debug.Log ("Rotate Right");
+			rotateRight();
 		}
 
 		if (Input.GetKeyDown (KeyCode.JoystickButton4)) {	//xbox 'left bumper" button
-			graph.transform.Rotate (0, -10, 0);
-			Debug.Log ("Rotate Left");
+			rotateLeft();
 		}
 		if (Input.GetKeyDown (KeyCode.JoystickButton7)) {	//xbox 'start" button
-			menu.SetActive (true);
-			graph.SetActive(false);
-			overlay.SetActive (false);
+			exitRandom();
 		}
+	}
+
+	public void rotateRight() {
+		graph.transform.Rotate (0, 10, 0);
+		Debug.Log ("Rotate Right");
+	}
+
+	public void rotateLeft() {
+		graph.transform.Rotate (0, -10, 0);
+		Debug.Log ("Rotate Left");
+	}
+
+	public void exitRandom() {
+		menu.SetActive (true);
+		graph.SetActive(false);
+		overlay.SetActive (false);
 	}
 }

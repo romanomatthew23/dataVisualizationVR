@@ -27,7 +27,7 @@ public class Random_Visualizer : MonoBehaviour {
 	/// <Random Data Set Functions>
 
 
-	void dataRand() {
+	public void dataRand() {
 		randomizePoints ();
 		initializeObjects ();
 		displayObjects ();
@@ -72,7 +72,7 @@ public class Random_Visualizer : MonoBehaviour {
 		}
 	}
 
-	void destroyObjects()
+	public void destroyObjects()
 	{
 		if (!generated) {
 			return;
