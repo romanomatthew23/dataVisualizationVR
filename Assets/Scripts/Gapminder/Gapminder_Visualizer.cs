@@ -21,7 +21,7 @@ public class Gapminder_Visualizer : MonoBehaviour {
 	public float yMax;
 
 	//year displayed
-	public int year;
+	public int year = 1951;
 
 	//width and height of world graph
 	public float xWorldMax = 10;
@@ -65,6 +65,7 @@ public class Gapminder_Visualizer : MonoBehaviour {
 	//private IList countryOverlap;
 	private string[] countryOverlap;
 
+	private bool traverseTimeEngaged = false;
 	private int counter =0;
 	private bool initialized;
 	//Variables to hold Unity Game Objects, Data, and other values
@@ -91,12 +92,12 @@ public class Gapminder_Visualizer : MonoBehaviour {
 			destroyObjects ();
 		}
 
-		if (Input.GetKey (KeyCode.JoystickButton5) && (counter % 10 == 2) ) {	//xbox 'right bumper" button
+		if ( (Input.GetKey (KeyCode.JoystickButton5) && (counter % 10 == 2))  || traverseTimeEngaged ) {	//xbox 'right bumper" button
 			if(generated)
 				advanceBalls(true);
 		}
 
-		else if (/*Input.GetKeyDown (KeyCode.JoystickButton4)*/ Input.GetKey (KeyCode.JoystickButton4) && (counter % 10 == 2) ) {	//xbox 'right bumper" button
+		else if (/*Input.GetKeyDown (KeyCode.JoystickButton4)*/ Input.GetKey (KeyCode.JoystickButton4) && (counter % 10 == 2) ) {	//xbox 'left bumper" button
 			if(generated)
 				advanceBalls(false);
 		}
@@ -117,6 +118,43 @@ public class Gapminder_Visualizer : MonoBehaviour {
 
 		counter++;
 	}
+
+	/***************************************************************************************************************************
+	 * 
+	 * 													Start Public Functions
+	 * 		
+	 * 
+	 * **************************************************************************************************************************/
+
+	public void displayPoints() {
+		loadData();
+	}
+
+	public void traverseTime() {
+		traverseTimeEngaged = true;
+	}
+
+	public void deletePoints() {
+		traverseTimeEngaged = false;
+		destroyObjects();
+	}
+
+	public void exitGapminder() {
+		//clean up and get back to start
+		traverseTimeEngaged = false;
+		destroyObjects();
+		//transform.position = new Vector3(-50, 2, 50);
+		menu.SetActive (true);
+		graph.SetActive(false);
+	}
+
+
+	/***************************************************************************************************************************
+	* 
+	* 													End Public Functions
+	* 		
+	* 
+	* **************************************************************************************************************************/
 
 	void interpolate() {
 		for (int i = 0; i < n; i++) {
